@@ -7,7 +7,8 @@ const Image = ({
     isBackground,
     positionElement,
     width,
-    overflow
+    overflow,
+    zIndex
 }: ImageProps) => {
     let stylesConfig: CSSProperties = {
         width
@@ -19,7 +20,8 @@ const Image = ({
             ...positionElement,
             position: "absolute",
             transform: "translateY(-50%)",
-            overflow
+            overflow,
+            zIndex
         }
     }
 

@@ -7,6 +7,7 @@ interface ImageProps {
     positionElement: PositionElementImage;
     width?: string;
     overflow?: CSSProperties["overflow"];
+    zIndex?: CSSProperties["zIndex"];
 }
 
 type PositionElementImage = {
