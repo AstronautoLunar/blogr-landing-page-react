@@ -5,6 +5,8 @@ import Image from "./Image";
 import Nav from "./Nav";
 import ColumnHeader from "./ColumnHeader";
 import Button from "./Button";
+import ContainerPresentation from "./ContainerPresentation";
+import Title from "./Title";
 
 export {
     Header,
@@ -13,5 +15,7 @@ export {
     Image,
     Nav,
     ColumnHeader,
-    Button
+    Button,
+    ContainerPresentation,
+    Title
 }

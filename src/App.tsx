@@ -5,7 +5,9 @@ import {
   Image,
   Nav,
   ColumnHeader,
-  Button
+  Button,
+  ContainerPresentation,
+  Title
 } from "./components";
 
 function App() {
@@ -59,6 +61,11 @@ function App() {
           width="2500px"
           zIndex="-1"
         />
+        <ContainerPresentation>
+          <Title>
+            A modern publishing platform
+          </Title>
+        </ContainerPresentation>
       </Background>
     </div>
   );

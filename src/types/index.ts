@@ -8,6 +8,8 @@ import {
 } from "./NavTypes";
 import { ColumnHeaderProps } from "./ColumnHeaderTypes";
 import { ButtonProps } from "./ButtonTypes";
+import { ContainerPresentationProps } from "./ContainerPresentation";
+import TitleProps from "./TitleTypes";
 
 export type {
     HeaderProps,
@@ -17,5 +19,7 @@ export type {
     NavProps,
     Data,
     ColumnHeaderProps,
-    ButtonProps
+    ButtonProps,
+    ContainerPresentationProps,
+    TitleProps
 }
