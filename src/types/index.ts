@@ -7,6 +7,7 @@ import {
     Data 
 } from "./NavTypes";
 import { ColumnHeaderProps } from "./ColumnHeaderTypes";
+import { ButtonProps } from "./ButtonTypes";
 
 export type {
     HeaderProps,
@@ -15,5 +16,6 @@ export type {
     ImageProps,
     NavProps,
     Data,
-    ColumnHeaderProps
+    ColumnHeaderProps,
+    ButtonProps
 }

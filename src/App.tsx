@@ -4,7 +4,8 @@ import {
   Background,
   Image,
   Nav,
-  ColumnHeader
+  ColumnHeader,
+  Button
 } from "./components";
 
 function App() {
@@ -36,6 +37,14 @@ function App() {
               data={dataNavHeader}
             />
           </ColumnHeader>
+          <ColumnHeader>
+            <Button>
+              Login
+            </Button>
+            <Button isTypeContrast={true}>
+              Sign Up
+            </Button>
+          </ColumnHeader> 
         </Header>
         <Image
           src={require("./assets/bg-pattern-intro-desktop.svg").default}
@@ -48,7 +57,7 @@ function App() {
             left: "none"
           }}
           width="2500px"
-          zIndex="-2"
+          zIndex="-1"
         />
       </Background>
     </div>

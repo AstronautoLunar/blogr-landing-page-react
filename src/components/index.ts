@@ -4,6 +4,7 @@ import Background from "./Background";
 import Image from "./Image";
 import Nav from "./Nav";
 import ColumnHeader from "./ColumnHeader";
+import Button from "./Button";
 
 export {
     Header,
@@ -11,5 +12,6 @@ export {
     Background,
     Image,
     Nav,
-    ColumnHeader
+    ColumnHeader,
+    Button
 }

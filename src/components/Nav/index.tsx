@@ -10,9 +10,21 @@ const Item = ({
     <a 
         className={styles.item}
     >
-        { children }
+        <span className={styles.text}>
+            { children }
+        </span>
+        
+        <Arrow/>
     </a>
 )
+
+const Arrow = () => (
+    <img
+        className={styles.iconArrowLight}
+        src={require("../../assets/icon-arrow-light.svg").default}
+        alt="icon arrow light"
+    />
+);
 
 const Nav = ({ data }: NavProps) => {
 
