@@ -7,7 +7,9 @@ import {
   ColumnHeader,
   Button,
   ContainerPresentation,
-  Title
+  Title,
+  Text,
+  AreaButtonsPresentation
 } from "./components";
 
 function App() {
@@ -43,7 +45,7 @@ function App() {
             <Button>
               Login
             </Button>
-            <Button isTypeContrast={true}>
+            <Button type="CTA">
               Sign Up
             </Button>
           </ColumnHeader> 
@@ -65,6 +67,23 @@ function App() {
           <Title>
             A modern publishing platform
           </Title>
+          <Text>
+            Grow your audience and build your online brand
+          </Text>
+          <AreaButtonsPresentation>
+            <Button 
+              type="CTA" 
+              paddingStyle="11px 12px"
+            >
+              Start for Free
+            </Button>
+            <Button 
+              type="ghost"
+              paddingStyle="10px 16px"
+            >
+              Learn More
+            </Button>
+          </AreaButtonsPresentation>
         </ContainerPresentation>
       </Background>
     </div>

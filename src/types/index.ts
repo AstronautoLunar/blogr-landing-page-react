@@ -10,6 +10,8 @@ import { ColumnHeaderProps } from "./ColumnHeaderTypes";
 import { ButtonProps } from "./ButtonTypes";
 import { ContainerPresentationProps } from "./ContainerPresentation";
 import TitleProps from "./TitleTypes";
+import TextProps from "./TextTypes";
+import AreaButtonsPresentationProps from "./AreaButtonsPresentation";
 
 export type {
     HeaderProps,
@@ -21,5 +23,7 @@ export type {
     ColumnHeaderProps,
     ButtonProps,
     ContainerPresentationProps,
-    TitleProps
+    TitleProps,
+    TextProps,
+    AreaButtonsPresentationProps
 }

@@ -10,4 +10,12 @@
     color: var(--white);
 
     font-weight: bold;
+
+    margin-right: 16px;
+
+    font-family: Ubuntu;
+}
+
+.button:last-of-type {
+    margin-right: 0px;
 }

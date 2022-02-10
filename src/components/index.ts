@@ -7,6 +7,8 @@ import ColumnHeader from "./ColumnHeader";
 import Button from "./Button";
 import ContainerPresentation from "./ContainerPresentation";
 import Title from "./Title";
+import Text from "./Text";
+import AreaButtonsPresentation from "./AreaButtonsPresentation";
 
 export {
     Header,
@@ -17,5 +19,7 @@ export {
     ColumnHeader,
     Button,
     ContainerPresentation,
-    Title
+    Title,
+    Text,
+    AreaButtonsPresentation
 }

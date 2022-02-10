@@ -1,6 +1,7 @@
 interface ButtonProps {
     children: string;
-    isTypeContrast?: boolean;
+    type?: "CTA" | "ghost";
+    paddingStyle?: string;
 }
 
 export type {

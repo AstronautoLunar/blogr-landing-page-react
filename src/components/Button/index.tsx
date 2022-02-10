@@ -4,16 +4,39 @@ import { ButtonProps } from "../../types";
 
 const Button = ({ 
     children, 
-    isTypeContrast
+    type,
+    paddingStyle = undefined
 }: ButtonProps) => {
     let stylesOfTypes: CSSProperties = {};
 
-    if(isTypeContrast) {
-        stylesOfTypes = {
-            backgroundColor: "var(--white)",
-            color: "var(--light-red)",
-            padding: "10px 32px"
-        }
+    switch(type) {
+        case "CTA":
+            stylesOfTypes = {
+                backgroundColor: "var(--white)",
+                color: "var(--light-red)",
+                padding: 
+                    paddingStyle 
+                    ? 
+                    paddingStyle 
+                    : 
+                    "10px 32px",
+                fontWeight: "700"
+            }
+            break;
+        case "ghost":
+            stylesOfTypes = {
+                backgroundColor: "transparent",
+                color: "var(--white)",
+                border: "1px solid var(--white)",
+                padding: 
+                    paddingStyle 
+                    ? 
+                    paddingStyle 
+                    : 
+                    ""
+            }
+            break;
+        default:
     }
 
     return (
