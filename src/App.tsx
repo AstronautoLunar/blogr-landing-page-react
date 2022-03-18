@@ -1,91 +1,57 @@
 import { 
-  Header, 
-  Logo,
+  BackgroundPatternIntro, 
+  LogoBlogr, 
+  Navigation 
+} from "./components";
+
+import {
+  Header,
   Background,
-  Image,
-  Nav,
   ColumnHeader,
   Button,
   ContainerPresentation,
   Title,
   Text,
-  AreaButtonsPresentation
-} from "./components";
+  AreaButtonsPresentation,
+  Main,
+  Section,
+} from "./components/ui";
 
 function App() {
-  const dataNavHeader = [
-    {
-      id: "01",
-      text: "Product"
-    },
-    {
-      id: "02",
-      text: "Company"
-    },
-    {
-      id: "03",
-      text: "Connect"
-    }
-  ];
-
   return (
     <div className="App">
       <Background>
         <Header>
           <ColumnHeader>
-            <Logo
-              src={require("./assets/logo.svg").default}
-              alt="logo"
-            />
-            <Nav
-              data={dataNavHeader}
-            />
+            <LogoBlogr />
+            <Navigation />
           </ColumnHeader>
           <ColumnHeader>
-            <Button>
-              Login
-            </Button>
-            <Button type="CTA">
-              Sign Up
-            </Button>
-          </ColumnHeader> 
+            <Button>Login</Button>
+            <Button type="CTA">Sign Up</Button>
+          </ColumnHeader>
         </Header>
-        <Image
-          src={require("./assets/bg-pattern-intro-desktop.svg").default}
-          alt="background image illustration"
-          isBackground={true}
-          positionElement={{
-            right: "-800px",
-            top: "40%",
-            bottom: "none",
-            left: "none"
-          }}
-          width="2500px"
-          zIndex="-1"
-        />
+        <BackgroundPatternIntro />
         <ContainerPresentation>
-          <Title>
-            A modern publishing platform
-          </Title>
-          <Text>
-            Grow your audience and build your online brand
-          </Text>
+          <Title>A modern publishing platform</Title>
+          <Text>Grow your audience and build your online brand</Text>
           <AreaButtonsPresentation>
-            <Button 
-              type="CTA" 
-              paddingStyle="11px 12px"
-            >
+            <Button type="CTA" paddingStyle="11px 12px">
               Start for Free
             </Button>
-            <Button 
-              type="ghost"
-              paddingStyle="10px 16px"
-            >
+            <Button type="ghost" paddingStyle="10px 16px">
               Learn More
             </Button>
           </AreaButtonsPresentation>
         </ContainerPresentation>
       </Background>
+      <Main>
+        <Section>
+          <Title color="var(--very-dark-grayish-blue)" size={2}>
+            Designed for the future
+          </Title>
+        </Section>
+      </Main>
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.item {
+    color: var(--white);
+
+    margin-right: 32px;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+    .text {
+        margin-right: 8px;
+    }
+}
